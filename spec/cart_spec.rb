@@ -2,7 +2,7 @@ require 'cart'
 require 'item'
 
 RSpec.describe(Cart) do
-  it 'Cartクラスのチェック' do
+  it do
     cart = Cart.new
 
     cart.add(Item.new('apple', 100))
