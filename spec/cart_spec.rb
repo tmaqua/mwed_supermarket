@@ -1,10 +1,14 @@
-require 'cart.rb'
+require 'cart'
+require "item"
 
 RSpec.describe(Cart) do
-  it do
+  it "Cartクラスのチェック" do
     cart = Cart.new
 
-    # expect(greeter.greet).to eq("hello, world")
+    cart.add(Item.new("apple", 100))
+    cart.add(Item.new("banana", 200))
+
+    expect(cart.total).to eq(300)
     # expect(greeter.greet("ruby")).to eq("hello, ruby")
   end
 end
