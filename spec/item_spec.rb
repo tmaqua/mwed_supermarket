@@ -2,9 +2,9 @@ require 'item.rb'
 
 RSpec.describe(Item) do
   it do
-    item = Item.new
-    item.name = "name"
-    item.price = 100
+    item = Item.new("name", 100)
+    # item.name = "name"
+    # item.price = 100
 
     # 名前nameを持っている
     expect(item.name).to eq("name")
