@@ -6,4 +6,5 @@ gem 'sinatra-contrib'
 group :test do
   gem 'rspec'
   gem 'pry'
+  gem 'rubocop', require: false
 end
