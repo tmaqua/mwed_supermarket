@@ -1,8 +1,8 @@
 class Cart
   attr_accessor :items
 
-  def initialize()
-    @items = Array.new
+  def initialize
+    @items = []
   end
 
   def add(item)
@@ -10,6 +10,6 @@ class Cart
   end
 
   def total
-    @items.inject(0) {|sum, item| sum + item.price}
+    @items.inject(0) { |sum, item| sum + item.price }
   end
 end

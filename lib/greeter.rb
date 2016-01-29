@@ -1,5 +1,5 @@
 class Greeter
-  def greet(name="world")
+  def greet(name = 'world')
     "hello, #{name}"
   end
 end
